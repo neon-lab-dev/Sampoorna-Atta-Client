@@ -8,18 +8,18 @@ import Testimonials from "../../components/shared/Testimonials/Testimonials";
 import WhySampoorna from "../../components/shared/WhySampoorna/WhySampoorna";
 
 const Home = () => {
-    return (
-        <div>
-            <Hero/>
-            <OurFlourRange/>
-            <PopularProducts/>
-            <WhySampoorna/>
-            <Testimonials/>
-            <PerfectEverydayRecipes/>
-            <OurPromiseOfQuality/>
-            <CTA/>
-        </div>
-    );
+  return (
+    <div>
+      <Hero />
+      <OurFlourRange />
+      <PopularProducts />
+      <WhySampoorna />
+      <PerfectEverydayRecipes />
+      <Testimonials />
+      <OurPromiseOfQuality />
+      <CTA />
+    </div>
+  );
 };
 
 export default Home;

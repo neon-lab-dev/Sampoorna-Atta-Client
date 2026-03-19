@@ -71,7 +71,7 @@ const PopularProducts = () => {
               <img
                 src={product?.image}
                 alt=""
-                className="w-37 h-39.75 mx-auto"
+                className="h-39.75 mx-auto"
               />
               <div>
                 <h3 className="text-lg font-bold leading-6">{product?.name}</h3>
