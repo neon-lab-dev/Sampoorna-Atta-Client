@@ -1,4 +1,5 @@
 import { IMAGES } from "../../../assets";
+import Button from "../../Reusable/Button/Button";
 import Container from "../../shared/Container/Container";
 
 const Hero = () => {
@@ -21,12 +22,8 @@ const Hero = () => {
               fresh flours is made from carefully selected grains and pulses.
             </p>
             <div className="flex items-center justify-center gap-6 mt-6">
-              <button className="px-8 py-4 border border-primary-10 rounded-3xl text-primary-10 text-lg font-bold">
-                Explore Our Range
-              </button>
-              <button className="px-8 py-4 bg-primary-5 border border-primary-5 rounded-3xl text-neutral-10 text-lg font-bold">
-                Shop Products
-              </button>
+              <Button label="Explore Our Range" variant="secondary" />
+              <Button label="Shop Products" variant="primary" />
             </div>
           </div>
 
