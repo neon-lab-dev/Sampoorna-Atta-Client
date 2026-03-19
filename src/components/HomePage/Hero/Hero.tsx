@@ -14,7 +14,7 @@ const Hero = () => {
       <Container>
         <div className="flex flex-col gap-12 items-center mt-12">
           <div>
-            <h1 className="text-[48px] font-bold text-neutral-10 leading-13.75 max-w-[1200px] mx-auto text-center">
+            <h1 className="text-[48px] font-bold text-neutral-10 leading-13.75 max-w-300 mx-auto text-center">
               Fresh Atta & Traditional Flours Made for Healthy Meals
             </h1>
             <p className="font-OpenSans text-neutral-10 leading-6 text-center mt-3">
