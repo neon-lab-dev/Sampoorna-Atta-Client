@@ -11,6 +11,7 @@ import multigrainMeals from "./images/multigrain-meals.webp";
 import banner1 from "./images/banner-1.webp";
 import banner2 from "./images/banner-2.webp";
 import banner3 from "./images/banner-3.webp";
+import dummyAvatar from "./images/dummy-avatar.webp";
 
 // Icons
 
@@ -33,7 +34,8 @@ export const IMAGES = {
     multigrainMeals,
     banner1,
     banner2,
-    banner3
+    banner3,
+    dummyAvatar
 };
 
 export const ICONS = {

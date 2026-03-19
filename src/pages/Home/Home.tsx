@@ -4,6 +4,7 @@ import OurPromiseOfQuality from "../../components/HomePage/OurPromiseOfQuality/O
 import PerfectEverydayRecipes from "../../components/HomePage/PerfectEverydayRecipes/PerfectEverydayRecipes";
 import PopularProducts from "../../components/HomePage/PopularProducts/PopularProducts";
 import CTA from "../../components/shared/CTA/CTA";
+import Testimonials from "../../components/shared/Testimonials/Testimonials";
 import WhySampoorna from "../../components/shared/WhySampoorna/WhySampoorna";
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
             <OurFlourRange/>
             <PopularProducts/>
             <WhySampoorna/>
+            <Testimonials/>
             <PerfectEverydayRecipes/>
             <OurPromiseOfQuality/>
             <CTA/>
