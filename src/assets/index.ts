@@ -8,6 +8,9 @@ import softRotis from "./images/soft-rotis.webp";
 import pakora from "./images/pakora.webp";
 import sattuDrink from "./images/sattu-drink.webp";
 import multigrainMeals from "./images/multigrain-meals.webp";
+import banner1 from "./images/banner-1.webp";
+import banner2 from "./images/banner-2.webp";
+import banner3 from "./images/banner-3.webp";
 
 // Icons
 
@@ -27,7 +30,10 @@ export const IMAGES = {
     softRotis,
     pakora,
     sattuDrink,
-    multigrainMeals
+    multigrainMeals,
+    banner1,
+    banner2,
+    banner3
 };
 
 export const ICONS = {
