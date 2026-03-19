@@ -19,6 +19,9 @@ import highFibre from "./icons/high-fibre.svg";
 import richProtein from "./icons/rich-protein.svg";
 import selectedIngredients from "./icons/selected-ingredients.svg";
 import hygienicProcessing from "./icons/hygienic-processing.svg";
+import location from "./icons/location.svg";
+import call from "./icons/call.svg";
+import email from "./icons/email.svg";
 
 
 export const IMAGES = {
@@ -42,5 +45,8 @@ export const ICONS = {
     highFibre,
     richProtein,
     selectedIngredients,
-    hygienicProcessing
+    hygienicProcessing,
+    location,
+    call,
+    email
 }
