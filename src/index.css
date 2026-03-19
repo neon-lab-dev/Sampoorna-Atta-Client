@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Fonts */
+  --font-Roboto: "Roboto", sans-serif;
+  --font-Poppins: "Poppins", sans-serif;
+
+  /* Colors */
+
+  /* Primary */
+
+  --color-primary-10: #087222;
+
+  /* secondary */
+  --color-secondary-10: #f18812;
+
+  /* neutral */
+
+  --color-neutral-5: #000;
+  --color-neutral-10: #333;
+  --color-neutral-20: #545454;
+  --color-neutral-30: #6b7280;
+  --color-neutral-40: #05160b;
+  --color-neutral-45: #696767;
+  --color-neutral-50: #d4d4d4;
+  --color-neutral-55: #b0b0b0;
+
+  /* accent */
+  --color-accent-10: #f17556;
+  --color-accent-20: #d61349;
+  --color-accent-25: #ffcece;
+  --color-accent-30: #ae0000;
+
+  /* Shadows */
+  /* --shadow-job-card: 0 4px 12px 0 rgba(2, 45, 80, 0.08); */
+
+  /* Gradients */
+  /* --bg-gradient-primary: linear-gradient(180deg, #06a0ed 100%, #6ecaf8 100%); */
+}
+
+/* .bg-gradient-primary {
+  background: var(--bg-gradient-primary);
+} */
