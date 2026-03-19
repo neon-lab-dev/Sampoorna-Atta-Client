@@ -14,7 +14,7 @@ const Navbar = () => {
   const cartItemCount = 2;
 
   return (
-    <nav className="bg-white font-Roboto py-8 font-Poppins">
+    <nav className="font-Roboto py-8 font-Poppins">
       <Container>
         <div className="flex justify-between items-center h-16">
           {/* Logo */}

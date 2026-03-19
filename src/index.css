@@ -20,12 +20,15 @@
   /* neutral */
   --color-neutral-5: #000;
   --color-neutral-10: #1C1C1C;
+  --color-neutral-15: #DEDEDE;
 
   /* accent */
   --color-accent-10: #f17556;
   --color-accent-20: #d61349;
   --color-accent-25: #ffcece;
   --color-accent-30: #ae0000;
+
+  --color-background-5: #FFF8E7;
 
   /* Shadows */
   /* --shadow-job-card: 0 4px 12px 0 rgba(2, 45, 80, 0.08); */
