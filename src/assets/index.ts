@@ -4,6 +4,10 @@ import wholeWheatAtta from "./images/whole-wheat-atta.webp";
 import multigrainAtta from "./images/multigrain-atta.webp";
 import gramFlour from "./images/gram-flour.webp";
 import chanaSattu from "./images/chana-sattu.webp";
+import softRotis from "./images/soft-rotis.webp";
+import pakora from "./images/pakora.webp";
+import sattuDrink from "./images/sattu-drink.webp";
+import multigrainMeals from "./images/multigrain-meals.webp";
 
 // Icons
 
@@ -19,7 +23,11 @@ export const IMAGES = {
     wholeWheatAtta,
     multigrainAtta,
     gramFlour,
-    chanaSattu
+    chanaSattu,
+    softRotis,
+    pakora,
+    sattuDrink,
+    multigrainMeals
 };
 
 export const ICONS = {
