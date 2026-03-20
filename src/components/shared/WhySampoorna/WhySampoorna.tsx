@@ -28,11 +28,11 @@ const WhySampoorna = () => {
   return (
     <div className="py-14 bg-secondary-10 text-neutral-15 text-center">
       <Container>
-        <h3 className="text-2xl md:text-[39px] font-bold leading-8 md:leading-11.75 text-center">
+        <h3 className="heading">
           Natural Goodness In Every Pack
         </h3>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10 mt-12 justify-items-center">
           {features.map((feature, index) => (
             <div key={index} className="flex flex-col items-center">
               <img src={feature.icon} alt={feature.title} className="size-12" />

@@ -58,11 +58,11 @@ const PopularProducts = () => {
   return (
     <Container>
       <div className="py-14 font-Poppins text-neutral-10 flex flex-col gap-12">
-        <h2 className="text-2xl md:text-[39px] font-bold leading-8 md:leading-11.75 text-center">
+        <h2 className="heading">
           Popular Products
         </h2>
 
-        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-8">
+        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-8 justify-items-center">
           {popularProducts?.map((product) => (
             <div
               key={product?.id}

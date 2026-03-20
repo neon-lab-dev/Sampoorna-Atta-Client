@@ -7,7 +7,7 @@ const OurPromiseOfQuality = () => {
     <Container>
       <div className="py-14 font-Poppins text-neutral-10">
         <div className="flex flex-col items-center text-center">
-          <h2 className="text-2xl md:text-[39px] font-bold leading-8 md:leading-11.75 text-center">
+          <h2 className="heading">
             Our Promise of Quality
           </h2>
           <p className="font-OpenSans mt-3">

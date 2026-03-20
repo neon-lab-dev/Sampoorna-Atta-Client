@@ -44,3 +44,11 @@
 button {
   @apply cursor-pointer;
 }
+
+
+
+@layer components {
+  .heading {
+    @apply heading;
+  }
+}

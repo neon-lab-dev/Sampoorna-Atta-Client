@@ -30,7 +30,7 @@ const OurFlourRange = () => {
   return (
     <Container>
       <div className="py-14 font-Poppins text-neutral-10 flex flex-col gap-12">
-        <h2 className="text-2xl md:text-[39px] font-bold leading-8 md:leading-11.75 text-center">
+        <h2 className="heading">
           Our Flour Range
         </h2>
 

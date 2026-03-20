@@ -28,7 +28,7 @@ const PerfectEverydayRecipes = () => {
     <Container>
       <div className="py-14 font-Poppins text-neutral-10">
         <div className="flex flex-col items-center text-center">
-          <h2 className="text-2xl md:text-[39px] font-bold leading-8 md:leading-11.75 text-center">
+          <h2 className="heading">
             Perfect for Everyday Recipes
           </h2>
           <p className="font-OpenSans mt-3">
@@ -37,7 +37,7 @@ const PerfectEverydayRecipes = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-12 justify-items-center">
           {dishes?.map((dish) => (
             <div key={dish?.title} className="">
               <img src={dish?.icon} alt="" className="h-[151px] md:h-66" />
