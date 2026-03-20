@@ -14,16 +14,16 @@ const Hero = () => {
       <Container>
         <div className="flex flex-col gap-12 items-center mt-12">
           <div>
-            <h1 className="text-[48px] font-bold text-neutral-10 leading-13.75 max-w-300 mx-auto text-center">
+            <h1 className="text-[32px] md:text-[48px] font-bold text-neutral-10 leading-9.75 md:leading-13.75 max-w-300 mx-auto text-center">
               Fresh Atta & Traditional Flours Made for Healthy Meals
             </h1>
             <p className="font-OpenSans text-neutral-10 leading-6 text-center mt-3">
               From soft rotis to nutritious drinks and snacks, our range of
               fresh flours is made from carefully selected grains and pulses.
             </p>
-            <div className="flex items-center justify-center gap-6 mt-6">
+            <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-6 mt-6">
               <Button label="Explore Our Range" variant="secondary" />
-              <Button label="Shop Products" variant="primary" />
+              <Button label="Shop Products" variant="primary" className="w-[200px] md:w-fit" />
             </div>
           </div>
 
@@ -31,8 +31,8 @@ const Hero = () => {
         </div>
       </Container>
 
-      <div className="py-11 bg-secondary-10">
-        <h3 className="text-2xl font-bold text-neutral-15 text-center">
+      <div className="py-4 md:py-11 bg-secondary-10">
+        <h3 className="text-xs md:text-2xl font-bold text-neutral-15 text-center">
           Quality Ingredients * Freshly Packed * Trusted for everyday meals.
         </h3>
       </div>

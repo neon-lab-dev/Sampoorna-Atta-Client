@@ -1,7 +1,7 @@
 import { ShoppingCart } from "lucide-react";
 import Container from "../Container/Container";
 import { Link } from "react-router-dom";
-import { IMAGES } from "../../../assets";
+import { ICONS, IMAGES } from "../../../assets";
 
 const Navbar = () => {
   const navLinks = [
@@ -19,11 +19,15 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="">
-            <img src={IMAGES.logo} alt="" className="w-21 h-23" />
+            <img
+              src={IMAGES.logo}
+              alt=""
+              className="w-16 md:w-21 h-17 md:h-23"
+            />
           </Link>
 
           {/* Desktop Navigation Links */}
-          <div className="hidden md:flex items-center gap-12">
+          <div className="hidden lg:flex items-center gap-12">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -53,6 +57,10 @@ const Navbar = () => {
               Sign-Up
             </button>
           </div>
+
+          <button>
+            <img src={ICONS.hamburgerMenu} alt="" className="size-8" />
+          </button>
         </div>
       </Container>
     </nav>

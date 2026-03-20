@@ -18,7 +18,7 @@ const Button = ({
   disabled = false,
 }: TButtonProps) => {
   const baseStyles =
-    "px-8 py-4 rounded-3xl text-lg font-bold transition-all duration-200";
+    "px-6 md:px-8 py-4 rounded-3xl text-base md:text-lg font-bold transition-all duration-200 font-Poppins";
 
   const variants = {
     primary:

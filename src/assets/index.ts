@@ -22,6 +22,7 @@ import hygienicProcessing from "./icons/hygienic-processing.svg";
 import location from "./icons/location.svg";
 import call from "./icons/call.svg";
 import email from "./icons/email.svg";
+import hamburgerMenu from "./icons/hamburger-menu.svg";
 
 
 export const IMAGES = {
@@ -48,5 +49,6 @@ export const ICONS = {
     hygienicProcessing,
     location,
     call,
-    email
+    email,
+    hamburgerMenu,
 }

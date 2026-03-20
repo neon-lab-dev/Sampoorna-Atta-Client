@@ -11,13 +11,13 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <OurFlourRange />
+      {/* <OurFlourRange />
       <PopularProducts />
       <WhySampoorna />
       <PerfectEverydayRecipes />
       <Testimonials />
       <OurPromiseOfQuality />
-      <CTA />
+      <CTA /> */}
     </div>
   );
 };
