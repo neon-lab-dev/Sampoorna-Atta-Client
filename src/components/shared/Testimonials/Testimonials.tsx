@@ -46,7 +46,7 @@ const Testimonials = () => {
   return (
     <div>
       <div className="py-14 font-Poppins text-neutral-10">
-        <h2 className="text-[39px] font-bold leading-11.75 text-center">
+        <h2 className="text-2xl md:text-[39px] font-bold leading-8 md:leading-11.75 text-center">
           What Our Customers Say
         </h2>
 

@@ -1,12 +1,11 @@
 import { IMAGES } from "../../../assets";
 import Button from "../../Reusable/Button/Button";
-import Container from "../Container/Container";
 
 const CTA = () => {
   return (
     <div className="pt-14 bg-secondary-10 text-neutral-15 text-center">
-      <Container>
-        <h3 className="text-[39px] font-bold leading-11.75">
+      <div className="max-w-325 mx-auto px-5 md:px-10 xl:px-5 2xl:px-0">
+        <h3 className="text-2xl md:text-[39px] font-bold leading-8 md:leading-11.75 text-center">
           Perfect for Everyday Recipes
         </h3>
 
@@ -19,7 +18,7 @@ const CTA = () => {
           <Button label="Shop Now" variant="primary" />
         </div>
         <img src={IMAGES.heroImage} alt="" className="mt-12 mx-auto" />
-      </Container>
+      </div>
     </div>
   );
 };

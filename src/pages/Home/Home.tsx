@@ -13,11 +13,11 @@ const Home = () => {
       <Hero />
       <OurFlourRange />
       <PopularProducts />
-      {/* <WhySampoorna />
+      <WhySampoorna />
       <PerfectEverydayRecipes />
       <Testimonials />
       <OurPromiseOfQuality />
-      <CTA /> */}
+      <CTA />
     </div>
   );
 };

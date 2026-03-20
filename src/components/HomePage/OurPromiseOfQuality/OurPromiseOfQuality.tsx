@@ -7,7 +7,7 @@ const OurPromiseOfQuality = () => {
     <Container>
       <div className="py-14 font-Poppins text-neutral-10">
         <div className="flex flex-col items-center text-center">
-          <h2 className="text-[39px] font-bold leading-11.75">
+          <h2 className="text-2xl md:text-[39px] font-bold leading-8 md:leading-11.75 text-center">
             Our Promise of Quality
           </h2>
           <p className="font-OpenSans mt-3">
@@ -16,12 +16,12 @@ const OurPromiseOfQuality = () => {
           </p>
         </div>
 
-        <div className="flex items-center gap-6 mt-12">
+        <div className="flex items-center justify-center gap-3 md:gap-6 mt-12">
           {firstRowImages?.map((img, id) => (
-            <img key={id} src={img} alt="" />
+            <img key={id} src={img} alt="" className="w-38 md:w-[330px] lg:w-[450px] xl:w-fit" />
           ))}
         </div>
-        <img src={IMAGES.banner3} alt="" className="mt-3" />
+        <img src={IMAGES.banner3} alt="" className="mt-3 mx-auto" />
       </div>
     </Container>
   );
