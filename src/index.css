@@ -30,16 +30,7 @@
 
   --color-background-5: #fff8e7;
 
-  /* Shadows */
-  /* --shadow-job-card: 0 4px 12px 0 rgba(2, 45, 80, 0.08); */
-
-  /* Gradients */
-  /* --bg-gradient-primary: linear-gradient(180deg, #06a0ed 100%, #6ecaf8 100%); */
 }
-
-/* .bg-gradient-primary {
-  background: var(--bg-gradient-primary);
-} */
 
 button {
   @apply cursor-pointer;
@@ -49,6 +40,14 @@ button {
 
 @layer components {
   .heading {
-    @apply heading;
+    @apply text-2xl font-bold text-center;
+    line-height: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .heading {
+      @apply text-[39px];
+      line-height: 2.9375rem;
+    }
   }
 }
