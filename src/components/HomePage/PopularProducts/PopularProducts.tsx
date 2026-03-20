@@ -58,30 +58,32 @@ const PopularProducts = () => {
   return (
     <Container>
       <div className="py-14 font-Poppins text-neutral-10 flex flex-col gap-12">
-        <h2 className="text-[39px] font-bold leading-11.75 text-center">
+        <h2 className="text-2xl md:text-[39px] font-bold leading-8 md:leading-11.75 text-center">
           Popular Products
         </h2>
 
-        <div className="grid grid-cols-4 gap-6 mt-8">
+        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-8">
           {popularProducts?.map((product) => (
             <div
               key={product?.id}
-              className="border border-neutral-15 p-6 rounded-xl flex flex-col justify-between gap-6"
+              className="border border-neutral-15 p-4 md:p-6 rounded-xl flex flex-col justify-between gap-6"
             >
-              <img
-                src={product?.image}
-                alt=""
-                className="h-39.75 mx-auto"
-              />
+              <img src={product?.image} alt="" className="h-39.75 mx-auto" />
               <div>
-                <h3 className="text-lg font-bold leading-6">{product?.name}</h3>
+                <h3 className="text-base md:text-lg font-bold leading-6">
+                  {product?.name}
+                </h3>
                 <p className="font-OpenSans mt-3">{product?.weight}</p>
                 <h3 className="text-lg font-bold leading-6 mt-3">
                   ₹{product?.price}
                 </h3>
               </div>
 
-              <Button label="Add To Cart" variant="secondary" />
+              <Button
+                label="Add To Cart"
+                variant="secondary"
+                className="text-xs px-3"
+              />
             </div>
           ))}
         </div>

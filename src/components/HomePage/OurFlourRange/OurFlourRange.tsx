@@ -30,11 +30,11 @@ const OurFlourRange = () => {
   return (
     <Container>
       <div className="py-14 font-Poppins text-neutral-10 flex flex-col gap-12">
-        <h2 className="text-[39px] font-bold leading-11.75 text-center">
+        <h2 className="text-2xl md:text-[39px] font-bold leading-8 md:leading-11.75 text-center">
           Our Flour Range
         </h2>
 
-        <div className="grid grid-cols-3 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-8">
           {products?.map((product) => (
             <div
               key={product?.name}
