@@ -21,7 +21,7 @@ const Hero = () => {
               From soft rotis to nutritious drinks and snacks, our range of
               fresh flours is made from carefully selected grains and pulses.
             </p>
-            <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-6 mt-6">
+            <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-4 md:gap-6 mt-6">
               <Button label="Explore Our Range" variant="secondary" />
               <Button label="Shop Products" variant="primary" className="w-[200px] md:w-fit" />
             </div>
