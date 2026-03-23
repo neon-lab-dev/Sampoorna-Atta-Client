@@ -1,9 +1,15 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Container from "../../shared/Container/Container";
-import { IMAGES } from "../../../assets";
-import { Link } from "react-router-dom";
+import { ICONS, IMAGES } from "../../../assets";
+import { Link, useLocation } from "react-router-dom";
 import Button from "../../Reusable/Button/Button";
+import PopularProductCard from "./PopularProductCard";
 
-const PopularProducts = () => {
+const PopularProducts = ({
+  isSearchBarVisible=false,
+  isBuyNowButtonVisible,
+}: any) => {
+  const pathname = useLocation().pathname;
   const popularProducts = [
     {
       id: "whole-wheat-atta-5kg",
@@ -58,41 +64,37 @@ const PopularProducts = () => {
   return (
     <Container>
       <div className="py-14 font-Poppins text-neutral-10 flex flex-col gap-12">
-        <h2 className="heading">
-          Popular Products
-        </h2>
+        {isSearchBarVisible && (
+          <div className="w-full max-w-250 mx-auto">
+            <div className="flex items-center gap-2 px-4 py-3 rounded-xl border border-primary-10">
+              <img src={ICONS.search} alt="" className="size-10" />
+              <input
+                type="text"
+                placeholder="Search"
+                className="w-full bg-transparent outline-none text-primary-10/80 placeholder:text-primary-10"
+              />
+            </div>
+          </div>
+        )}
+
+        <h2 className="heading mt-5">Popular Products</h2>
 
         <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-8 justify-items-center">
           {popularProducts?.map((product) => (
-            <div
-              key={product?.id}
-              className="border border-neutral-15 p-4 md:p-6 rounded-xl flex flex-col justify-between gap-6"
-            >
-              <img src={product?.image} alt="" className="h-39.75 mx-auto" />
-              <div>
-                <h3 className="text-base md:text-lg font-bold leading-6">
-                  {product?.name}
-                </h3>
-                <p className="font-OpenSans mt-3">{product?.weight}</p>
-                <h3 className="text-lg font-bold leading-6 mt-3">
-                  ₹{product?.price}
-                </h3>
-              </div>
-
-              <Button
-                label="Add To Cart"
-                variant="secondary"
-                className="text-xs px-3"
-              />
-            </div>
+            <PopularProductCard
+              product={product}
+              isBuyNowButtonVisible={isBuyNowButtonVisible}
+            />
           ))}
         </div>
 
-        <div className="flex items-center justify-center">
-          <Link to={"/"}>
-            <Button label="Explore All Products" variant="primary" />
-          </Link>
-        </div>
+        {pathname === "/" && (
+          <div className="flex items-center justify-center">
+            <Link to={"/"}>
+              <Button label="Explore All Products" variant="primary" />
+            </Link>
+          </div>
+        )}
       </div>
     </Container>
   );

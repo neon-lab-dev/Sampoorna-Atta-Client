@@ -12,9 +12,9 @@ import banner1 from "./images/banner-1.webp";
 import banner2 from "./images/banner-2.webp";
 import banner3 from "./images/banner-3.webp";
 import dummyAvatar from "./images/dummy-avatar.webp";
+import shopHeroImg from "./images/shop-hero-img.webp";
 
 // Icons
-
 import highFibre from "./icons/high-fibre.svg";
 import richProtein from "./icons/rich-protein.svg";
 import selectedIngredients from "./icons/selected-ingredients.svg";
@@ -23,6 +23,7 @@ import location from "./icons/location.svg";
 import call from "./icons/call.svg";
 import email from "./icons/email.svg";
 import hamburgerMenu from "./icons/hamburger-menu.svg";
+import search from "./icons/search.svg";
 
 
 export const IMAGES = {
@@ -39,7 +40,8 @@ export const IMAGES = {
     banner1,
     banner2,
     banner3,
-    dummyAvatar
+    dummyAvatar,
+    shopHeroImg
 };
 
 export const ICONS = {
@@ -51,4 +53,5 @@ export const ICONS = {
     call,
     email,
     hamburgerMenu,
+    search,
 }
