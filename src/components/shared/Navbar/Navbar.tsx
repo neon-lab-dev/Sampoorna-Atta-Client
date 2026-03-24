@@ -58,7 +58,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="font-Roboto py-5 md:py-8 font-Poppins relative">
+    <nav className="font-Roboto py-3 md:py-0 2xl:py-8 font-Poppins relative">
       <Container>
         <div className="flex justify-between items-center h-16">
           {/* Logo */}

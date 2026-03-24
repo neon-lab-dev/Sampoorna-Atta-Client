@@ -13,6 +13,8 @@ import banner2 from "./images/banner-2.webp";
 import banner3 from "./images/banner-3.webp";
 import dummyAvatar from "./images/dummy-avatar.webp";
 import shopHeroImg from "./images/shop-hero-img.webp";
+import shopHeroImgPhone from "./images/shop-hero-phone.webp";
+import shopHeroImgTab from "./images/shop-hero-tab.webp";
 
 // Icons
 import highFibre from "./icons/high-fibre.svg";
@@ -24,6 +26,7 @@ import call from "./icons/call.svg";
 import email from "./icons/email.svg";
 import hamburgerMenu from "./icons/hamburger-menu.svg";
 import search from "./icons/search.svg";
+import arrowDown from "./icons/arrow-down.svg";
 
 
 export const IMAGES = {
@@ -41,7 +44,10 @@ export const IMAGES = {
     banner2,
     banner3,
     dummyAvatar,
-    shopHeroImg
+    shopHeroImg,
+    shopHeroImgPhone,
+    shopHeroImgTab,
+
 };
 
 export const ICONS = {
@@ -54,4 +60,5 @@ export const ICONS = {
     email,
     hamburgerMenu,
     search,
+    arrowDown,
 }
