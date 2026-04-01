@@ -1,4 +1,4 @@
-import { ShoppingCart, X } from "lucide-react";
+import { ChevronRight, ShoppingCart, } from "lucide-react";
 import Container from "../Container/Container";
 import { Link } from "react-router-dom";
 import { ICONS, IMAGES } from "../../../assets";
@@ -17,45 +17,45 @@ const Navbar = () => {
 
   const cartItemCount = 2;
 
-  // Dropdown animation variants
-  const dropdownVariants = {
-    hidden: {
-      opacity: 0,
-      y: -10,
-      transition: {
-        duration: 0.2,
-      },
-    },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.25,
-        staggerChildren: 0.05,
-      },
-    },
-    exit: {
-      opacity: 0,
-      y: -10,
-      transition: {
-        duration: 0.2,
-      },
-    },
-  };
+  // // Dropdown animation variants
+  // const dropdownVariants = {
+  //   hidden: {
+  //     opacity: 0,
+  //     y: -10,
+  //     transition: {
+  //       duration: 0.2,
+  //     },
+  //   },
+  //   visible: {
+  //     opacity: 1,
+  //     y: 0,
+  //     transition: {
+  //       duration: 0.25,
+  //       staggerChildren: 0.05,
+  //     },
+  //   },
+  //   exit: {
+  //     opacity: 0,
+  //     y: -10,
+  //     transition: {
+  //       duration: 0.2,
+  //     },
+  //   },
+  // };
 
-  const itemVariants = {
-    hidden: {
-      opacity: 0,
-      x: -10,
-    },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        duration: 0.2,
-      },
-    },
-  };
+  // const itemVariants = {
+  //   hidden: {
+  //     opacity: 0,
+  //     x: -10,
+  //   },
+  //   visible: {
+  //     opacity: 1,
+  //     x: 0,
+  //     transition: {
+  //       duration: 0.2,
+  //     },
+  //   },
+  // };
 
   return (
     <nav className="font-Roboto py-3 md:py-0 2xl:py-8 font-Poppins relative">
@@ -103,79 +103,81 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
+          {/* Mobile Menu Button */}
           <div className="relative lg:hidden">
             <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              onClick={() => setIsMenuOpen(true)}
               className="focus:outline-none"
-              aria-label="Toggle menu"
             >
               <img src={ICONS.hamburgerMenu} alt="" className="size-8" />
             </button>
 
-            {/* Dropdown Menu */}
             <AnimatePresence>
               {isMenuOpen && (
                 <>
                   {/* Backdrop */}
-                  <div
-                    className="fixed inset-0 z-40"
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 0.4 }}
+                    exit={{ opacity: 0 }}
                     onClick={() => setIsMenuOpen(false)}
+                    className="fixed inset-0 bg-black z-40"
                   />
 
+                  {/* Sidebar */}
                   <motion.div
-                    variants={dropdownVariants}
-                    initial="hidden"
-                    animate="visible"
-                    exit="exit"
-                    className="absolute top-full right-0 mt-2 w-72 bg-white rounded-lg shadow-lg border border-gray-100 z-50"
+                    initial={{ x: "100%" }}
+                    animate={{ x: 0 }}
+                    exit={{ x: "100%" }}
+                    transition={{ type: "tween", duration: 0.3 }}
+                    className="fixed top-0 right-0 h-screen w-screen bg-background-5 z-50 shadow-xl flex flex-col"
                   >
-                    {/* Close button */}
-                    <div className="flex justify-end p-3 pb-0">
-                      <button
-                        onClick={() => setIsMenuOpen(false)}
-                        className="p-1 hover:bg-gray-100 rounded-full transition-colors"
-                      >
-                        <X className="size-4 text-gray-500" />
+                    {/* Header */}
+                    <div className="flex justify-between items-center px-4 pt-14 pb-12">
+                      <Link to="/" className="">
+                        <img
+                          src={IMAGES.logo}
+                          alt=""
+                          className="w-16 md:w-21 h-17 md:h-23"
+                        />
+                      </Link>
+                      <button onClick={() => setIsMenuOpen(false)}>
+                        <  ChevronRight />
+
                       </button>
                     </div>
 
-                    {/* Navigation Links */}
-                    <div className="p-3 pt-0">
+                    {/* Links */}
+                    <div className="flex flex-col px-4 gap-12">
                       {navLinks.map((link) => (
-                        <motion.div key={link.name} variants={itemVariants}>
-                          <Link
-                            to={link.href}
-                            onClick={() => setIsMenuOpen(false)}
-                            className="block text-neutral-10 text-base hover:text-primary-5 hover:bg-gray-50 transition-all duration-200 px-4 py-2.5 rounded-md"
-                          >
-                            {link.name}
-                          </Link>
-                        </motion.div>
+                        <Link
+                          key={link.name}
+                          to={link.href}
+                          onClick={() => setIsMenuOpen(false)}
+                          className=" rounded-md hover:bg-gray-100 text-neutral-20 font-bold"
+                        >
+                          {link.name}
+                        </Link>
                       ))}
 
-                      <motion.div variants={itemVariants}>
-                        <Link
-                          to="/cart"
-                          onClick={() => setIsMenuOpen(false)}
-                          className="flex items-center justify-between text-neutral-10 text-base hover:text-primary-5 hover:bg-gray-50 transition-all duration-200 px-4 py-2.5 rounded-md"
-                        >
-                          <span>Cart</span>
-                          {cartItemCount > 0 && (
-                            <span className="text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center bg-primary-10">
-                              {cartItemCount}
-                            </span>
-                          )}
-                        </Link>
-                      </motion.div>
+                    </div>
 
-                      <motion.div
-                        variants={itemVariants}
-                        className="mt-2 pt-2 border-t border-gray-100"
+                    {/* Bottom CTA */}
+                    <div className="mt-auto  flex justify-between px-4 pb-14 items-center">
+                      <Link
+                        to="/cart"
+                        className=" border-3 border-primary-5 size-10 text-primary-5 rounded-full flex items-center justify-center hover:bg-primary-5 hover:text-white transition-colors duration-200 relative"
                       >
-                        <button className="w-full px-4 py-2.5 bg-primary-5 rounded-md text-neutral-10 font-semibold hover:bg-primary-6 transition-colors">
-                          Sign-Up
-                        </button>
-                      </motion.div>
+                        <ShoppingCart className="size-6" />
+                        {cartItemCount > 0 && (
+                          <span className="absolute -top-2 -right-2 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center bg-primary-10">
+                            {cartItemCount}
+                          </span>
+                        )}
+                      </Link>
+                      <button className="w-fit px-8 rounded-3xl py-4 bg-primary-5 text-neutral-10 font-bold text-lg">
+                        Sign-Up
+                      </button>
                     </div>
                   </motion.div>
                 </>
