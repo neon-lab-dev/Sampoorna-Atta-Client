@@ -21,6 +21,7 @@
   --color-neutral-5: #000;
   --color-neutral-10: #1c1c1c;
   --color-neutral-15: #dedede;
+  --color-neutral-20: #b0b0b0;
 
   /* accent */
   --color-accent-10: #f17556;
@@ -29,21 +30,18 @@
   --color-accent-30: #ae0000;
 
   --color-background-5: #fff8e7;
-
 }
 
 button {
   @apply cursor-pointer;
 }
 
-
-
 @layer components {
   .heading {
     @apply text-2xl font-bold text-center;
     line-height: 2rem;
   }
-  
+
   @media (min-width: 768px) {
     .heading {
       @apply text-[39px];
