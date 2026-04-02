@@ -15,7 +15,7 @@ const ContactUsForm = () => {
         <h2 className="heading">We’re Here to Help</h2>
 
         <form className="space-y-8.25 flex items-center flex-col w-full">
-          <div className="grid grid-cols-2 gap-8.25 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8.25 w-full">
             <TextInput
               label="First Name"
               placeholder="Enter your first name"

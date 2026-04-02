@@ -34,13 +34,13 @@ const FAQ = () => {
           {faqs.map((faq, index) => (
             <article
               key={index}
-              className="py-12 px-6 w-full border-b border-neutral-15"
+              className="py-6 md:py-12 px-0 md:px-6 w-full border-b border-neutral-15"
             >
               <div
                 className="flex gap-2 cursor-pointer items-center justify-between w-full"
                 onClick={() => handleClick(index)}
               >
-                <h3 className="text-neutral-25 font-bold text-2xl leading-8">
+                <h3 className="text-neutral-25 font-bold text-lg md:text-2xl leading-8">
                   {faq.question}
                 </h3>
                 <img
