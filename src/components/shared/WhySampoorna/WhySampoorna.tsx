@@ -28,7 +28,7 @@ const WhySampoorna = () => {
   return (
     <div className="py-14 bg-secondary-10 text-neutral-15 text-center">
       <Container>
-        <h3 className="heading">
+        <h3 className="heading text-background-5">
           Natural Goodness In Every Pack
         </h3>
 

@@ -39,7 +39,7 @@ button {
 
 @layer components {
   .heading {
-    @apply text-2xl font-bold text-center text-neutral-25;
+    @apply text-2xl font-bold text-center text-neutral-25 font-Poppins;
     line-height: 2rem;
   }
 
