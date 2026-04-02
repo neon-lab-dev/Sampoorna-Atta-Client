@@ -22,6 +22,7 @@
   --color-neutral-10: #1c1c1c;
   --color-neutral-15: #dedede;
   --color-neutral-20: #b0b0b0;
+  --color-neutral-25: #0D0D0D;
 
   /* accent */
   --color-accent-10: #f17556;
@@ -38,7 +39,7 @@ button {
 
 @layer components {
   .heading {
-    @apply text-2xl font-bold text-center;
+    @apply text-2xl font-bold text-center text-neutral-25;
     line-height: 2rem;
   }
 
