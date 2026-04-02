@@ -2,9 +2,9 @@ import { IMAGES } from "../../../assets";
 import Button from "../../Reusable/Button/Button";
 import Container from "../../shared/Container/Container";
 
-const ShopHero = () => {
+const AboutUsHero = () => {
   return (
-    <div className="font-Poppins relative h-180 md:h-230 lg:h-250 xl:h-275">
+    <div className="font-Poppins relative h-180 md:h-230 lg:h-275">
       <div className="py-6 bg-secondary-10">
         <h3 className="text-lg font-bold text-neutral-15 text-center">
           Healthy Flours for Everyday Cooking
@@ -15,34 +15,35 @@ const ShopHero = () => {
         <div className="flex flex-col gap-12 items-center mt-10 md:mt-2 xl:mt-12 relative z-10">
           <div>
             <h1 className="text-[32px] md:text-[48px] font-bold text-neutral-10 leading-9.75 md:leading-13.75 max-w-300 mx-auto text-center">
-              Premium Atta & Everyday Flours
+              We’re Here to Help with Your Everyday Needs
             </h1>
             <p className="font-OpenSans text-neutral-10 leading-6 text-center mt-3">
-              Made from carefully selected grains for everyday cooking
+              Need help or have a query? We’re always ready to assist you with
+              the right guidance.
             </p>
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 mt-6">
+              <Button label="Explore Our Range" variant="secondary" />
               <Button
                 label="Shop Products"
                 variant="primary"
                 className="w-50 md:w-fit"
               />
-              <Button label="Explore Our Range" variant="secondary" />
             </div>
           </div>
         </div>
       </Container>
       <img
-        src={IMAGES.shopHeroImg}
+        src={IMAGES.aboutUsHeroImg}
         alt=""
-        className="h-217.5 w-full absolute top-0 bottom-0 object-cover lg:mt-17 2xl:mt-19 hidden lg:block"
+        className="h-250 w-full absolute top-0 bottom-0 object-cover lg:mt-17 2xl:mt-19 hidden lg:block"
       />
       <img
-        src={IMAGES.shopHeroImg}
+        src={IMAGES.aboutUsHeroImgTab}
         alt=""
         className="h-180 w-full absolute top-0 bottom-0 object-cover mt-18 hidden md:block lg:hidden"
       />
       <img
-        src={IMAGES.shopHeroImgPhone}
+        src={IMAGES.aboutUsHeroImgPhone}
         alt=""
         className="h-150 w-full absolute top-0 bottom-0 object-cover mt-19 md:hidden"
       />
@@ -56,4 +57,4 @@ const ShopHero = () => {
   );
 };
 
-export default ShopHero;
+export default AboutUsHero;

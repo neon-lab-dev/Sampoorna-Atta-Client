@@ -15,6 +15,9 @@ import dummyAvatar from "./images/dummy-avatar.webp";
 import shopHeroImg from "./images/shop-hero-img.webp";
 import shopHeroImgPhone from "./images/shop-hero-phone.webp";
 import shopHeroImgTab from "./images/shop-hero-tab.webp";
+import aboutUsHeroImg from "./images/abut-us-hero-img.webp";
+import aboutUsHeroImgTab from "./images/abut-us-hero-img-tab.webp";
+import aboutUsHeroImgPhone from "./images/abut-us-hero-img-phone.webp";
 
 // Icons
 import highFibre from "./icons/high-fibre.svg";
@@ -47,7 +50,9 @@ export const IMAGES = {
     shopHeroImg,
     shopHeroImgPhone,
     shopHeroImgTab,
-
+    aboutUsHeroImg,
+    aboutUsHeroImgTab,
+    aboutUsHeroImgPhone
 };
 
 export const ICONS = {

@@ -1,4 +1,4 @@
-import { ChevronRight, ShoppingCart, } from "lucide-react";
+import { ChevronRight, ShoppingCart } from "lucide-react";
 import Container from "../Container/Container";
 import { Link } from "react-router-dom";
 import { ICONS, IMAGES } from "../../../assets";
@@ -11,52 +11,11 @@ const Navbar = () => {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "Shop", href: "/shop" },
-    { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" },
+    { name: "About", href: "/about-us" },
+    { name: "Contact", href: "/contact-us" },
   ];
 
   const cartItemCount = 2;
-
-  // // Dropdown animation variants
-  // const dropdownVariants = {
-  //   hidden: {
-  //     opacity: 0,
-  //     y: -10,
-  //     transition: {
-  //       duration: 0.2,
-  //     },
-  //   },
-  //   visible: {
-  //     opacity: 1,
-  //     y: 0,
-  //     transition: {
-  //       duration: 0.25,
-  //       staggerChildren: 0.05,
-  //     },
-  //   },
-  //   exit: {
-  //     opacity: 0,
-  //     y: -10,
-  //     transition: {
-  //       duration: 0.2,
-  //     },
-  //   },
-  // };
-
-  // const itemVariants = {
-  //   hidden: {
-  //     opacity: 0,
-  //     x: -10,
-  //   },
-  //   visible: {
-  //     opacity: 1,
-  //     x: 0,
-  //     transition: {
-  //       duration: 0.2,
-  //     },
-  //   },
-  // };
-
   return (
     <nav className="font-Roboto py-3 md:py-0 2xl:py-8 font-Poppins relative">
       <Container>
@@ -142,8 +101,7 @@ const Navbar = () => {
                         />
                       </Link>
                       <button onClick={() => setIsMenuOpen(false)}>
-                        <  ChevronRight />
-
+                        <ChevronRight />
                       </button>
                     </div>
 
@@ -159,7 +117,6 @@ const Navbar = () => {
                           {link.name}
                         </Link>
                       ))}
-
                     </div>
 
                     {/* Bottom CTA */}
